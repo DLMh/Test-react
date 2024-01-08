@@ -20,6 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import "../App.css";
 
 const drawerWidth = 240;
 
@@ -103,17 +104,15 @@ export default function Sidenav() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
       
-      </AppBar>
-      <Drawer variant="permanent" open={open}>
+      <Drawer  variant="permanent" open={open} >
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </DrawerHeader>
         <Divider />
-        <List>
+        <List  >
           {['Tableau de bord', 'Teams', 'Payements', 'Attendance','Settings'].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
@@ -139,9 +138,9 @@ export default function Sidenav() {
         </List>
         <Divider />
         <List>
-        <Button variant="contained" color="primary">
-                  Log out
-      </Button>
+            <Button variant="contained" color="warning">
+                      Log out
+          </Button>
         </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>

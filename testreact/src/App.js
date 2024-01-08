@@ -5,7 +5,7 @@ import Sidenav from './component/Sidenav';
 import Navbar from './component/Navbar';
 import { Box } from '@mui/material';
 import Content from './component/Content';
-
+import Table from './component/Table';
 
 function App() {
   return (
@@ -14,7 +14,11 @@ function App() {
         <Box sx={{display:"flex"}}>
         <Sidenav/>
         </Box>
-        <Content/>
+        <Box sx={{display:"flex"}}>
+         <Content/>
+        </Box>
+        <Box><Table/></Box>
+        
       </>
       
       

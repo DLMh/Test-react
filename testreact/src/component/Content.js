@@ -22,11 +22,11 @@ export default function Content() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
-        <Grid item xs={5}>
+        <Grid item xs={3}>
         <Item>
         <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
-                <CardContent>
+            <CardContent className='card2'>
                 
                 <Typography variant="body2" color="text.secondary">
                     Date
@@ -39,11 +39,11 @@ export default function Content() {
             </Card>
         </Item>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Item>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
-                <CardContent>
+                <CardContent className='card2'>
                 
                 <Typography variant="body2" color="text.secondary">
                     Total de reservation
